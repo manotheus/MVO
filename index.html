@@ -22,10 +22,6 @@
             width: 100%;
         }
     </style>
-
-</head>
-
-<body>
         <!-- Meta Pixel Code -->
         <script>
             !function(f,b,e,v,n,t,s)
@@ -39,11 +35,18 @@
             fbq('init', '420792806763950');
             fbq('track', 'PageView');
             fbq('track', 'ViewContent');
+            fbq('track', 'InitiateCheckout');
+            fbq('track', 'AddPaymentInfo');
+            fbq('track', 'Purchase', {value: 0.00, currency: 'USD'});
         </script>
         <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=420792806763950&ev=PageView&noscript=1"
         /></noscript>
         <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+
     <div class="section gray m_padding">
         <div class="inner-section">
             <div class="div-block-2"></div><img src="images/logo.webp" loading="lazy" alt="" class="logo" />
